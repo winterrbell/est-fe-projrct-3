@@ -80,7 +80,6 @@ input[type="password"] {
   padding-top: 20px 0 20px;
   border-width: 0 0 1px;
   font-size:16px;
-
 }
 
 #login-btn {
@@ -101,5 +100,9 @@ input[type="password"] {
 }
 
 .link-group a {
-  gap: 14px;
+  display: inline-flex;
+  justify-content: center;
+  color: #333;
+  text-decoration: none;
+  margin-right: 14px;
 }
