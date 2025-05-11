@@ -1,7 +1,6 @@
 @import "./normalize.css";
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -42,27 +41,39 @@ body {
   justify-content: center;
 }
 
-#tab-group button {
-  font-size: 18px;
+.tab-customer {
   width: 275px;
+  height: 61px;
+  border-radius: 10px 10px 0 0;
+  background-color: #FFF;
+  border: var(--sub-color) solid 1px;
+  border-width: 1px 1px 0;
+  position: relative;
+  z-index: 3;
+}
+
+.tab-seller {
+  width: 276px;
   height: 80px;
   border-radius: 10px;
   border: var(--sub-color) solid 1px;
+  z-index: 1;
+}
+
+#tab-group button {
+  font-size: 18px;
   font-weight: 500;
 }
 
-.tab-customer {
-  background-color: #FFF;
-}
-
+/* 로그인 */
 #login-form-customer {
   margin-top: -20px;
   width: 550px;
   height: 292px;
   border: #C4C4C4 solid 1px;
-  border-radius: 10px;
+  border-radius: 0 10px 10px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   background-color: #FFF;
   display: flex;
   flex-direction: column;
@@ -106,3 +117,110 @@ input[type="password"] {
   text-decoration: none;
   margin-right: 14px;
 }
+
+/* 회원가입 */
+
+#signup-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  font-size:16px ;
+}
+#signup-form {
+  margin-top: -20px;
+  width: 550px;
+  height: 586px;
+  border: #C4C4C4 solid 1px;
+  border-radius: 0 10px 10px;
+  position: relative;
+  z-index: 1;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.signup-group label {
+  margin: 12px 0 10px ;
+  color:#767676 ;
+}
+
+.signup-group label:nth-child(1) {
+  margin-top: 40px;
+}
+
+.signup-group label:nth-of-type(4) {
+  margin-top: 50px;
+}
+
+.signup-group input {
+  display: flex;
+  justify-content: center;
+  border: solid var(--sub-color) 1px;
+  border-radius: 5px;
+  width: 480px;
+  height: 54px;
+}
+
+.signup-group input:first-of-type {
+  width: 346px;
+  display: inline-block;
+}
+
+.check-duplication {
+  background-color: var(--main-color);
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  width: 122px;
+  height: 54px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 12px;
+}
+
+#tel1, #tel2, #tel3 {
+  width: 152px;
+  height: 54px;
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.signup-info {
+  display: flex;
+  color: #767676;
+  font-size: 16px;
+  gap:10px;
+  margin-top: 34px;
+
+}
+
+span {
+  font-weight: 600;
+  text-decoration-line: underline;
+}
+
+.signup-btn {
+  margin-top: 34px;
+  width: 480px;
+  height: 60px;
+  color: #FFF;
+  background-color: var(--sub-color);
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+
+
+
+
+
+
